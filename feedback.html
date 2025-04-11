@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="feedstyle.css">
+</head>
+<body>
+  <h1 class="feed">We'd Love Your Feedback! 😊</h1>
+  
+  <form action="thankyou.html" method="POST" class="feedback-form">
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Your Email (optional):</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="experience">How was your quiz experience?</label><br>
+    <textarea id="experience" name="experience" rows="4" cols="40" required></textarea><br><br>
+
+    <label for="rating">Rate us:</label><br>
+    <select id="rating" name="rating">
+      <option value="5">🌟🌟🌟🌟🌟</option>
+      <option value="4">🌟🌟🌟🌟</option>
+      <option value="3">🌟🌟🌟</option>
+      <option value="2">🌟🌟</option>
+      <option value="1">🌟</option>
+    </select><br><br>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</body>
+</html>

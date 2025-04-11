@@ -1,0 +1,72 @@
+
+
+body {
+    background: cyan;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+h1{
+    font-size:35px;
+    text-shadow: 3px 3px 6px black;
+
+}
+h1:hover{
+    animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.feedback-form {
+    background: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+  
+ 
+  
+  
+  button[type="submit"] {
+    background-color: #e91e63;
+    color: white;
+    padding: 12px 20px;
+   
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #c2185b;
+  }

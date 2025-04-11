@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizgame</title>
+</head>
+<style>
+    body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #fef4e8;
+}
+
+.quiz-heading {
+  color: #ff5555;
+  font-size: 2rem;
+}
+
+#quiz-container {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 10px;
+}
+button:hover{
+    transform:scale(1.1);
+    transition:0.8s;
+}
+</style>
+<body>
+<link rel ="stylesheet" href="Style.css">
+  <h1 class="quiz-heading">Quiz Time! 🎉</h1>
+
+  <div id="quiz-container">
+    <p id="question">Loading question...</p>
+
+    <form id="quiz-form">
+      <label><input type="radio" name="option" value="0"> <span id="option0"></span></label><br>
+      <label><input type="radio" name="option" value="1"> <span id="option1"></span></label><br>
+      <label><input type="radio" name="option" value="2"> <span id="option2"></span></label><br>
+      <label><input type="radio" name="option" value="3"> <span id="option3"></span></label><br><br>
+
+      <button type="button" onclick="submitAnswer()">Submit</button>
+    </form>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
+
+    
+</body>
+</html>
